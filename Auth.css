@@ -1,0 +1,14 @@
+:root { --black:#000; --ink:#0b0e12; --text:#e8e8ea; --muted:#a7a7ad; --blue:#1e90ff; --green:#32cd32; --radius:12px }
+*{box-sizing:border-box} body{margin:0;height:100%;font-family:Inter,system-ui;background:var(--black);color:var(--text)}
+.auth-main{display:grid;place-items:center;height:100vh;padding:2rem}
+.auth-panel{width:min(520px,94%);background:#0f1216;padding:2rem;border-radius:14px;border:1px solid #1a1a1d}
+.auth-panel h1{margin:0 0 1rem;font-size:1.4rem}
+.field{margin-bottom:0.9rem}
+.field label{display:block;font-weight:600;margin-bottom:.3rem}
+.field input{width:100%;padding:.65rem;border-radius:10px;border:1px solid #23242a;background:#0b0f13;color:var(--text)}
+.field input:focus-visible{outline:2px solid #8fdcff; outline-offset:2px}
+.btn{display:inline-flex;padding:.8rem 1.1rem;border-radius:999px;border:0;background:linear-gradient(135deg,var(--blue),var(--green));color:#071014;font-weight:800;cursor:pointer}
+.muted{color:var(--muted);margin-top:1rem}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem}
+#feedback{margin-top:.8rem;font-weight:700}
+a{color:#bfe1ff}
