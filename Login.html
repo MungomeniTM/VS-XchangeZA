@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — VSXchangeZA</title>
+  <link rel="stylesheet" href="auth.css" />
+</head>
+<body>
+  <main class="auth-main">
+    <form id="login-form" class="auth-panel" aria-labelledby="loginTitle">
+      <h1 id="loginTitle">Sign in to VSXchangeZA</h1>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required minlength="8" />
+      </div>
+
+      <button id="loginBtn" class="btn primary" type="submit">Sign in</button>
+      <p class="muted">Don't have an account? <a href="register.html">Create account</a></p>
+      <div id="feedback" role="alert"></div>
+    </form>
+  </main>
+  <script type="module" src="login.js"></script>
+</body>
+</html>
