@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register — VSXchangeZA</title>
+  <link rel="stylesheet" href="auth.css" />
+</head>
+<body>
+  <main class="auth-main">
+    <form id="register-form" class="auth-panel" aria-labelledby="registerTitle">
+      <h1 id="registerTitle">Create your account</h1>
+      <div class="grid">
+        <div class="field"><label for="firstName">First name</label><input id="firstName" name="firstName" autocomplete="given-name" /></div>
+        <div class="field"><label for="lastName">Last name</label><input id="lastName" name="lastName" autocomplete="family-name" /></div>
+      </div>
+      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
+      <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="new-password" required minlength="8" /></div>
+      <div class="field"><label for="role">Main role</label><input id="role" name="role" autocomplete="organization-title" /></div>
+
+      <button id="registerBtn" class="btn primary" type="submit">Create account</button>
+      <p class="muted">Already registered? <a href="login.html">Sign in</a></p>
+      <div id="feedback" role="alert"></div>
+    </form>
+  </main>
+  <script type="module" src="register.js"></script>
+</body>
+</html>
